@@ -2,6 +2,7 @@
 ## Vue.js project using vue-resource and vue-router in a cinema showtime and filtering application (OMDb API)
 
 ![Home Page](../assets/a.png?raw=true)
+![Detail](../assets/b.png?raw=true)
 
 ### Run `npm run start`
 
