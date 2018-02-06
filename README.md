@@ -5,7 +5,13 @@
 ![Detail](../assets/b.png?raw=true)
 
 ### Run `npm run start`
-
+- Instructor-created Node server `server.js`
+  - `"/"` route renders `index.html`
+  - `"/api"` route calls `getData()` in `api.js`
+    - `api.js` uses `axios` to get info from `www.omdbapi.com` for a list of movies stored in `.env`
+  - uses `open` to open new browser window in development mode
+- Entry point for `webpack.config.js` is `src/main.js`
+  - `created()` lifecycle hook for Vue in `main.js` sends `GET` request to `"/api"` route to get all movies into the `movies` variable  
 ### Path `"/"` (name: `home`)
 - `Overview` component has 3 child-components: `MovieList`, `MovieFilter`, and `DaySelect`
   - `MovieList` component shows list of all filtered movies
